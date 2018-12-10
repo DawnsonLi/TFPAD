@@ -1,5 +1,6 @@
 # TFPAD
-threshold-free prediction based anomaly detection
+threshold-free prediction based anomaly detection <br>
+智能免阈值异常探测算法 <br>
 ## 简介 <br>
 * 基于时间序列预测的异常检测算法十分成熟，通过对原始时间序列进行学习，可以求得新数据的预测值，并计算预测值和真实值的差值，如果该差值超过阈值，就认为是异常。
 * 设置阈值十分依赖使用经验，此外设置的阈值如果固定不变，也不能适应不断变化的环境。
@@ -7,4 +8,4 @@ threshold-free prediction based anomaly detection
 得到残差序列R。通过对R应用k sigma方法和LOF算法，可以实现免阈值设定。
 ## 算法 <br>
 * 我们使用的数据集参考GFSAD (https://github.com/DawnsonLi/GFSAD/tree/master/ours/data)
-* 我们使用了EWMA，多项式回归，鲁棒回归作为预测器，经过8个实际数据的测试，我们的方法确实能够提升性能。
+* 我们使用了EWMA，多项式回归，鲁棒回归作为预测器，经过8个实际数据的测试，我们的方法确实能够大幅度提升性能。
